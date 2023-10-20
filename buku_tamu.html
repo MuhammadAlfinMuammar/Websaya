@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Buku Tamu</title>
+    <!-- Mengimpor Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <a href="index.html" class="btn btn-primary">Home</a>
+            <a href="artikel.html" class="btn btn-primary">About Me</a>
+            <a href="jadwal_kuliah.html" class="btn btn-primary">Jadwal Kuliah</a>
+            <a href="pendidikan.html" class="btn btn-primary">Pendidikan</a>
+            <a href="daftar_barang.html" class="btn btn-primary">Daftar Barang</a>
+            <a href="buku_tamu.html" class="btn btn-primary">Buku Tamu</a>
+            <a href="https://tik.ft.unm.ac.id" class="btn btn-primary">JTIK</a>
+            <a href="javascript.html" class="btn btn-primary">Java Script</a>
+        </div>
+        <h2 class="text-center mt-5">Form Buku Tamu</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama_lengkap">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap"
+                    placeholder="Masukkan Nama Lengkap">
+            </div>
+            <div class="form-group">
+                <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="jenis_kelamin" id="laki_laki" value="L">
+                    <label class="form-check-label" for="laki_laki">Laki-laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="jenis_kelamin" id="perempuan" value="P">
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat Tinggal:</label>
+                <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan Alamat Tinggal">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan Email">
+            </div>
+            <div class="form-group">
+                <label>Aktif pada Social Media:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="facebook" name="facebook" value="ya">
+                    <label class="form-check-label" for="facebook">Facebook</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="twitter" name="twitter" value="ya">
+                    <label class="form-check-label" for="twitter">Twitter</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="instagram" name="instagram" value="ya">
+                    <label class="form-check-label" for="instagram">Instagram</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="path" name="path" value="ya">
+                    <label class="form-check-label" for="path">Path</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="info">Mengetahui Web Ini dari:</label>
+                <select class="form-control" id="info" name="info">
+                    <option selected="select">-= Pilih =-</option>
+                    <option value="web">Web</option>
+                    <option value="surat_kabar">Surat Kabar</option>
+                    <option value="teman_kerabat">Teman/Kerabat</option>
+                    <option value="browsing_internet">Browsing Internet</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea class="form-control" id="pesan" name="pesan" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!-- Mengimpor Bootstrap JS dan jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
